@@ -3,6 +3,7 @@ import { Alert } from 'react-native';
 import md5 from 'md5';
 
 import Hero from '../../components/Hero';
+import Quant from '../../components/Quant';
 
 import api from '../../service/api';
 
@@ -81,7 +82,9 @@ export default function Heroes() {
 
     function renderFooter() {
         if (!loadingMoreData || heroes.length === totalResults) {
-            return null
+            return (
+                <Quant quant={count} />
+            )
         } else {
             return <LoadingMoreDateItem><Loading size="small" color="#000" /></LoadingMoreDateItem>
         }
