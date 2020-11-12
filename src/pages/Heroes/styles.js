@@ -16,3 +16,10 @@ export const ContainerLoading = styled.View`
 `;
 
 export const Loading = styled.ActivityIndicator``;
+
+export const LoadingMoreDateItem = styled.View`
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+`;
