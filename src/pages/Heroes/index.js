@@ -49,7 +49,13 @@ export default function Heroes() {
                 <ContainerLoading>
                     <Loading size="large" color="#333" />
                 </ContainerLoading> :
-                <Hero />
+                <List
+                    data={heroes}
+                    keyExtractor={item => String(item.id)}
+                    renderItem={({ item }) => (
+                        <Hero item={item} />
+                    )}
+                />
             }
         </Container>
     );
