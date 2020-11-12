@@ -13,6 +13,9 @@ export default () => {
                 <Screen
                     name="Heroes"
                     component={Heroes}
+                    options={{
+                        headerShown: false
+                    }}
                 />
             </Navigator>
         </NavigationContainer>
